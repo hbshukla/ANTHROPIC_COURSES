@@ -139,10 +139,8 @@
 
 <script>
     function openPDF(file) {
-        document.getElementById("pdfViewer").src = file;
-        document.getElementById("modal").style.display = "block";
-    }
-
+    window.open(file, "_blank");
+}
     function closePDF() {
         document.getElementById("modal").style.display = "none";
         document.getElementById("pdfViewer").src = "";
