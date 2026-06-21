@@ -43,20 +43,18 @@
         /* ✅ CENTERED PREVIEW */
         .preview {
             height: 180px;
+            overflow: hidden;
             display: flex;
             justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            background: #fff;
+            align-items: flex-start; /* top align */
+            background: white;
         }
 
         .preview iframe {
             width: 100%;
-            height: 300px;
+            height: 240px; /* PDF karta thodi moti */
             border: none;
-            pointer-events: none;   /* prevents scroll/interaction */
-            transform: scale(0.5);
-            transform-origin: top center;
+            pointer-events: none;
         }
 
         /* Modal */
